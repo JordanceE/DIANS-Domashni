@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ВиноХармони", "ВиноХармони.csproj", "{42FD8E65-B87C-451F-82EA-6605E1A9F240}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WineHarmonyBase", "..\WineHarmonyBase\WineHarmonyBase.sqlproj", "{BDEAC02C-174F-4DE9-B8C7-B89049532B78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{42FD8E65-B87C-451F-82EA-6605E1A9F240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42FD8E65-B87C-451F-82EA-6605E1A9F240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42FD8E65-B87C-451F-82EA-6605E1A9F240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEAC02C-174F-4DE9-B8C7-B89049532B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEAC02C-174F-4DE9-B8C7-B89049532B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEAC02C-174F-4DE9-B8C7-B89049532B78}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDEAC02C-174F-4DE9-B8C7-B89049532B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEAC02C-174F-4DE9-B8C7-B89049532B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEAC02C-174F-4DE9-B8C7-B89049532B78}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

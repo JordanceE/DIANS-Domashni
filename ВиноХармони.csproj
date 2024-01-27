@@ -180,12 +180,23 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\WineriesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401271734095_initial.cs" />
+    <Compile Include="Migrations\202401271734095_initial.designer.cs">
+      <DependentUpon>202401271734095_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401281212508_creating wineries data table.cs" />
+    <Compile Include="Migrations\202401281212508_creating wineries data table.designer.cs">
+      <DependentUpon>202401281212508_creating wineries data table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Winery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -263,6 +274,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Wineries\Create.cshtml" />
+    <Content Include="Views\Wineries\Delete.cshtml" />
+    <Content Include="Views\Wineries\Details.cshtml" />
+    <Content Include="Views\Wineries\Edit.cshtml" />
+    <Content Include="Views\Wineries\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,6 +309,14 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202401271734095_initial.resx">
+      <DependentUpon>202401271734095_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401281212508_creating wineries data table.resx">
+      <DependentUpon>202401281212508_creating wineries data table.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
