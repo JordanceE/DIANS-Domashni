@@ -2,8 +2,56 @@
     ViewBag.Title = "About us";
 }
 <main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
 </main>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - VinoHarmony</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #73274E;
+        }
+
+        #content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #text {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+
+        #wine-glass {
+            max-width: 400px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1><b>About VinoHarmony</b></h1>
+    <br />
+
+    <div id="content">
+        <div id="text">
+            <p>VinoHarmony is a project designed to elevate the work and experience of winemakers,<br /> creating a harmonious blend of tradition, innovation, and sustainable practices.<br /> The project embraces a comprehensive approach to empower winemakers,<br /> ensuring their progress in a constantly evolving market while preserving the cultural <br />richness and uniqueness in their offerings.</p>
+
+            <p>Our goal is to support winemakers in navigating the dynamic landscape, <br />providing them with the tools and knowledge to thrive. By fostering a harmonious <br />coexistence of tradition and innovation, VinoHarmony aims to contribute to the success<br /> and sustainability of the wine industry.</p>
+        </div>
+
+        <img id="wine-glass" src="~Images/wine.jpg" alt="Wine Glass">
+    </div>
+</body>
+</html>
