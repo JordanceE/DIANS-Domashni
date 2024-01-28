@@ -192,6 +192,18 @@
     <Compile Include="Migrations\202401281212508_creating wineries data table.designer.cs">
       <DependentUpon>202401281212508_creating wineries data table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401281704442_newDataBase.cs" />
+    <Compile Include="Migrations\202401281704442_newDataBase.designer.cs">
+      <DependentUpon>202401281704442_newDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401281710031_NewConnectionToServerAndDataBase.cs" />
+    <Compile Include="Migrations\202401281710031_NewConnectionToServerAndDataBase.designer.cs">
+      <DependentUpon>202401281710031_NewConnectionToServerAndDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202401282000536_Filled the database.cs" />
+    <Compile Include="Migrations\202401282000536_Filled the database.designer.cs">
+      <DependentUpon>202401282000536_Filled the database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -316,6 +328,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202401281212508_creating wineries data table.resx">
       <DependentUpon>202401281212508_creating wineries data table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401281704442_newDataBase.resx">
+      <DependentUpon>202401281704442_newDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401281710031_NewConnectionToServerAndDataBase.resx">
+      <DependentUpon>202401281710031_NewConnectionToServerAndDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401282000536_Filled the database.resx">
+      <DependentUpon>202401282000536_Filled the database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,16 @@
+﻿namespace ВиноХармони.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class Filledthedatabase : DbMigration
+    {
+        public override void Up()
+        {
+        }
+        
+        public override void Down()
+        {
+        }
+    }
+}
