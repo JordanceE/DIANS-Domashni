@@ -8,9 +8,10 @@
     <title>Google Maps Integration with Search and Filter</title>
 
     <!-- Google Maps API and jQuery -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtf0gna-I3WJiyU1apbKzITiEunc9LPz8&libraries=places&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtf0gna-I3WJiyU1apbKzITiEunc9LPz8&loading=async&libraries=places&callback=initMap">
+    </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
     <style>
@@ -62,7 +63,6 @@
 <body>
     <h1><b>VinoHarmony</b></h1>
 
-
     <div id="controls-container">
         <div id="sorting-controls">
             <button id="sortButton">Sort Locations</button>
@@ -78,7 +78,6 @@
         </div>
     </div>
 
-
     <div id="map"></div>
 
     <script>
@@ -90,7 +89,6 @@
                 center: { lat: 41.6086, lng: 21.7453 },
                 zoom: 8
             });
-
 
             loadWineries();
         }
@@ -133,16 +131,13 @@
         }
 
         $(document).ready(function () {
-
             $('#sortButton').on('click', function () {
-
+                // Add sorting logic here if needed
                 loadWineries();
             });
 
-
             $('#searchButton').on('click', function () {
                 var searchQuery = $('#searchInput').val();
-
 
                 var placesService = new google.maps.places.PlacesService(map);
                 var request = {
@@ -152,12 +147,12 @@
 
                 placesService.textSearch(request, function (results, status) {
                     if (status === google.maps.places.PlacesServiceStatus.OK) {
-
+                        // Clear existing markers
                         for (var i = 0; i < locations.length; i++) {
                             locations[i].marker.setMap(null);
                         }
 
-
+                        // Add new markers
                         for (var i = 0; i < results.length; i++) {
                             var place = results[i];
                             var marker = new google.maps.Marker({
@@ -173,7 +168,6 @@
                             marker.addListener('click', function () {
                                 infowindow.open(map, marker);
                             });
-
 
                             locations.push({ city: place.name, marker: marker });
                         }

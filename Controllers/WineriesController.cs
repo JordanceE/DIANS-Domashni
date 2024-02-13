@@ -7,7 +7,11 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ВиноХармони.Models;
-
+using CsvHelper;
+using CsvHelper.Configuration;
+using Microsoft.AspNetCore;
+using System.Globalization;
+using System.IO;
 namespace ВиноХармони.Controllers
 {
     public class WineriesController : Controller
@@ -17,10 +21,26 @@ namespace ВиноХармони.Controllers
         // GET: Wineries
         public ActionResult Index()
         {
+            
             return View(db.Wineries.ToList());
         }
 
-        // GET: Wineries/Details/5
+
+        private List<Winery> GetWineriesFromCsv()
+        {
+            List<Winery> wineries;
+
+            // Патека до CSV фајлот со податоци за винариите
+            string csvFilePath = "~/CSVData/combaining_data_from_wineries.csv";
+
+            using (var reader = new StreamReader(csvFilePath))
+            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))
+            {
+                wineries = csv.GetRecords<Winery>().ToList();
+            }
+
+            return wineries;
+        }
         public ActionResult Details(int? id)
         {
             if (id == null)
